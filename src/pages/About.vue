@@ -39,12 +39,6 @@
   progress within communities.
 </p>
 
-<p class="text-zinc-400 leading-relaxed">
-  Outside of tech, I enjoy traveling, long drives, community building, and exploring
-  how technology and leadership can shape better futures, especially for underserved
-  and international communities.
-</p>
-
         </section>
 
         <!-- EDUCATION -->
