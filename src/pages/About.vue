@@ -93,22 +93,22 @@
 
             <div class="bg-zinc-900/30 backdrop-blur-md border border-zinc-800/50 rounded-xl p-4 hover:border-blue-500/50 hover:shadow-md transition-all duration-500">
               <h3 class="font-semibold text-zinc-100">English</h3>
-              <p class="text-zinc-400">Fluent</p>
+              <p class="text-zinc-400">Proficient</p>
             </div>
 
             <div class="bg-zinc-900/30 backdrop-blur-md border border-zinc-800/50 rounded-xl p-4 hover:border-blue-500/50 hover:shadow-md transition-all duration-500">
-              <h3 class="font-semibold text-zinc-100">Hindi & Urdu</h3>
-              <p class="text-zinc-400">Fluent</p>
+              <h3 class="font-semibold text-zinc-100">Hindi, Urdu & Nepali</h3>
+              <p class="text-zinc-400">Upper Intermediate</p>
             </div>
 
             <div class="bg-zinc-900/30 backdrop-blur-md border border-zinc-800/50 rounded-xl p-4 hover:border-blue-500/50 hover:shadow-md transition-all duration-500">
               <h3 class="font-semibold text-zinc-100">Malay & Indonesian</h3>
-              <p class="text-zinc-400">Conversational</p>
+              <p class="text-zinc-400">Intermediate</p>
             </div>
 
             <div class="bg-zinc-900/30 backdrop-blur-md border border-zinc-800/50 rounded-xl p-4 hover:border-blue-500/50 hover:shadow-md transition-all duration-500">
-              <h3 class="font-semibold text-zinc-100">Nepali & German</h3>
-              <p class="text-zinc-400">Intermediate</p>
+              <h3 class="font-semibold text-zinc-100">German</h3>
+              <p class="text-zinc-400">Beginner</p>
             </div>
           </div>
         </section>
