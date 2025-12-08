@@ -73,7 +73,7 @@ const blogPosts: BlogPost[] = [
     date: '05 July 2025',
     excerpt:
       'A powerful moment for ASEAN–EU academic cooperation, with UTM at the centre of global educational diplomacy.',
-    image: new URL('./assets/asean.jpg', import.meta.url).href
+    image: new URL('../assets/asean.jpg', import.meta.url).href
   },
   {
     slug: 'bowlers-bonanza-2025',
