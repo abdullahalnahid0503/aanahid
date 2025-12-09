@@ -1,140 +1,158 @@
 <template>
   <div class="min-h-screen bg-transparent transition-colors duration-500 py-16 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-3xl mx-auto">
-      <h1 class="text-4xl md:text-5xl font-bold text-zinc-100 mb-4">
-        Get In Touch
-      </h1>
+    <div class="max-w-5xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold text-zinc-100 mb-4">Get In Touch</h1>
       <p class="text-lg text-zinc-400 mb-12">
         Have a question or want to work together? Feel free to reach out!
       </p>
 
       <div class="grid md:grid-cols-2 gap-8 mb-12">
-        <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300">
-          <h2 class="text-2xl font-semibold text-zinc-100 mb-6">
-            Contact Form
-          </h2>
-          <form @submit.prevent="handleSubmit" class="space-y-6">
-            <div>
-              <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Name
-              </label>
-              <input
-                id="name"
-                v-model="form.name"
-                type="text"
-                required
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-zinc-100 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                placeholder="Your name"
-              />
+        <!-- Left Column -->
+        <div class="space-y-8">
+
+          <!-- Contact Form -->
+          <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <h2 class="text-2xl font-semibold text-zinc-100 mb-4">Contact Form</h2>
+            <form @submit.prevent="handleSubmit" class="space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                <input
+                  id="name"
+                  v-model="form.name"
+                  type="text"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-900 text-zinc-100 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                  placeholder="Your name"
+                />
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                <input
+                  id="email"
+                  v-model="form.email"
+                  type="email"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-900 text-zinc-100 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                  placeholder="your.email@example.com"
+                />
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                <textarea
+                  id="message"
+                  v-model="form.message"
+                  required
+                  rows="5"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-900 text-zinc-100 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none"
+                  placeholder="Your message..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-105"
+              >
+                Send Message
+              </button>
+            </form>
+
+            <div v-if="submitted" class="mt-4 p-4 bg-green-900/20 border border-green-800 rounded-lg">
+              <p class="text-green-300 text-sm">Thank you for your message! I'll get back to you soon.</p>
             </div>
+          </div>
 
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Email
-              </label>
-              <input
-                id="email"
-                v-model="form.email"
-                type="email"
-                required
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-zinc-100 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                placeholder="your.email@example.com"
-              />
-            </div>
+          <!-- Open to Opportunities -->
+          <div class="bg-gradient-to-br from-primary/10 to-blue-500/10 dark:from-primary/20 dark:to-blue-500/20 rounded-xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <h2 class="text-2xl font-semibold text-zinc-100 mb-4">Open to Opportunities</h2>
+            <p class="text-zinc-400 text-sm text-justify">
+              I'm always excited to connect with people and ideas that make a real difference. I work closely with international students, advocate for human rights, and explore how education, ethics, and meaningful connections can shape a better world.
 
-            <div>
-              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                v-model="form.message"
-                required
-                rows="5"
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-zinc-100 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none"
-                placeholder="Your message..."
-              ></textarea>
-            </div>
+              <br><br>Whether it’s a new project, a collaboration, or an opportunity to create impact, I’m all ears, and I promise to bring curiosity, energy. If your idea involves connecting people, solving global challenges, or making learning more inclusive and ethical, we’re probably on the same page.
 
-            <button
-              type="submit"
-              class="w-full px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:scale-105"
-            >
-              Send Message
-            </button>
-          </form>
-
-          <div v-if="submitted" class="mt-4 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
-            <p class="text-green-800 dark:text-green-300 text-sm">
-              Thank you for your message! I'll get back to you soon.
+              <br><br>Feel free to reach out, whether through a quick message, filling out the contact form, or even booking a free call. Let’s see how we can make a difference together!
             </p>
           </div>
+
         </div>
 
-        <!-- Connect With Me Section (unchanged) -->
+        <!-- Right Column -->
         <div class="space-y-8">
-          <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300">
-            <h2 class="text-2xl font-semibold text-zinc-100 mb-6">
-              Connect With Me
-            </h2>
-            <div class="space-y-4">
-              <!-- LinkedIn -->
-              <a
-                href="https://www.linkedin.com/in/abdullahalnahid0503/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center gap-4 p-4 bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-              >
-                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                </svg>
-                <div>
-                  <p class="font-medium text-zinc-100">LinkedIn</p>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">Connect professionally</p>
-                </div>
-              </a>
-              <!-- GitHub -->
-              <a
-                href="https://github.com/abdullahalnahid0503"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center gap-4 p-4 bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-              >
-                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                </svg>
-                <div>
-                  <p class="font-medium text-zinc-100">GitHub</p>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">View my code</p>
-                </div>
-              </a>
-              <!-- Instagram -->
-              <a
-                href="https://www.instagram.com/abdullahal._.nahid/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center gap-4 p-4 bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-              >
-                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                </svg>
-                <div>
-                  <p class="font-medium text-zinc-100">Instagram</p>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">Follow my journey</p>
-                </div>
-              </a>
-            </div>
+
+          <!-- Connect With Me -->
+<div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+  <h2 class="text-2xl font-semibold text-zinc-100 mb-4">Connect With Me</h2>
+  <div class="space-y-4">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/abdullahalnahid0503/" target="_blank"
+       class="flex items-center gap-4 p-4 bg-gray-900/60 rounded-lg hover:bg-gray-700 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+      <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM7 19H4V8h3v11zm-1.5-12.2c-1 0-1.75-.8-1.75-1.8s.75-1.8 1.75-1.8 1.75.8 1.75 1.8-.75 1.8-1.75 1.8zM20 19h-3v-5.6c0-3.4-4-3.1-4 0V19h-3V8h3v1.8c1.4-2.6 7-2.8 7 2.5V19z"/>
+      </svg>
+      <div>
+        <p class="font-medium text-zinc-100">LinkedIn</p>
+        <p class="text-sm text-gray-400">Connect professionally</p>
+      </div>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/abdullahalnahid0503" target="_blank"
+       class="flex items-center gap-4 p-4 bg-gray-900/60 rounded-lg hover:bg-gray-700 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+      <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1 .9-.3 2-.4 3-.4s2.1.1 3 .4c2.3-1.5 3.3-1 3.3-1 .6 1.7.2 2.9.1 3.2.8.9 1.3 2 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2V22c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+      </svg>
+      <div>
+        <p class="font-medium text-zinc-100">GitHub</p>
+        <p class="text-sm text-gray-400">View my code</p>
+      </div>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/abdullahal._.nahid/" target="_blank"
+       class="flex items-center gap-4 p-4 bg-gray-900/60 rounded-lg hover:bg-gray-700 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+      <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2.2c3.2 0 3.6.01 4.9.07 3.2.15 4.8 1.7 5 4.9.06 1.3.07 1.7.07 4.9 0 3.2-.01 3.6-.07 4.9-.15 3.2-1.7 4.8-5 4.9-1.3.06-1.7.07-4.9.07s-3.6-.01-4.9-.07c-3.3-.15-4.8-1.7-5-4.9C2.01 15.6 2 15.2 2 12s.01-3.6.07-4.9C2.22 3.9 3.8 2.3 7 2.2c1.3-.06 1.7-.07 4.9-.07m0-2.2C8.7 0 8.3.01 7 .07 2.6.26.2 2.7.01 7c-.06 1.3-.07 1.7-.07 5s.01 3.7.07 5c.19 4.3 2.6 6.7 7 6.9 1.3.06 1.7.07 5 .07s3.7-.01 5-.07c4.3-.19 6.7-2.6 6.9-7 .06-1.3.07-1.7.07-5s-.01-3.7-.07-5c-.19-4.3-2.6-6.7-6.9-6.9C15.7.01 15.3 0 12 0zm0 5.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2 6.2-2.8 6.2-6.2S15.4 5.8 12 5.8zm0 10.2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm6.4-11.8c-.8 0-1.4.6-1.4 1.4s.6 1.4 1.4 1.4 1.4-.6 1.4-1.4-.6-1.4-1.4-1.4z"/>
+      </svg>
+      <div>
+        <p class="font-medium text-zinc-100">Instagram</p>
+        <p class="text-sm text-gray-400">Follow my journey</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+
+          <!-- Request a Call -->
+          <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <h2 class="text-2xl font-semibold text-zinc-100 mb-4">Request a Call</h2>
+            <p class="text-zinc-400 text-sm mb-6">
+              Want to schedule a Zoom, Google Meet, or Webex call?<br />
+              Submit the form below and I’ll confirm shortly.
+            </p>
+
+            <form @submit.prevent="handleCallSubmit" class="space-y-4">
+              <input v-model="callForm.name" type="text" required placeholder="Your Name"
+                     class="w-full px-4 py-2 rounded-lg border border-gray-600 bg-gray-900 text-zinc-100" />
+              <input v-model="callForm.email" type="email" required placeholder="Your Email"
+                     class="w-full px-4 py-2 rounded-lg border border-gray-600 bg-gray-900 text-zinc-100" />
+              <input v-model="callForm.date" type="date" required
+                     class="w-full px-4 py-2 rounded-lg border border-gray-600 bg-gray-900 text-zinc-100" />
+              <input v-model="callForm.time" type="time" required
+                     class="w-full px-4 py-2 rounded-lg border border-gray-600 bg-gray-900 text-zinc-100" />
+              <textarea v-model="callForm.purpose" rows="3" required placeholder="Purpose of the call..."
+                        class="w-full px-4 py-2 rounded-lg border border-gray-600 bg-gray-900 text-zinc-100 resize-none"></textarea>
+              <button type="submit"
+                      class="w-full px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-1">
+                Submit Request
+              </button>
+              <div v-if="callSubmitted" class="mt-2 p-3 bg-green-900/20 border border-green-800 rounded-lg">
+                <p class="text-green-300 text-sm">Your call request has been submitted!</p>
+              </div>
+            </form>
           </div>
 
-          <div class="bg-gradient-to-br from-primary/10 to-blue-500/10 dark:from-primary/20 dark:to-blue-500/20 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-            <h3 class="text-lg font-semibold text-zinc-100 mb-2">
-              Open to Opportunities
-            </h3>
-            <p class="text-zinc-400 text-sm">
-              I'm always interested in hearing about new projects, collaborations, and opportunities
-              to create meaningful impact through technology.
-            </p>
-          </div>
         </div>
       </div>
     </div>
@@ -142,42 +160,37 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
+import { ref, reactive } from "vue";
 
-const form = reactive({
-  name: '',
-  email: '',
-  message: ''
-})
-
-const submitted = ref(false)
-
+const form = reactive({ name: "", email: "", message: "" });
+const submitted = ref(false);
 const handleSubmit = async () => {
   try {
-    const res = await fetch('https://formspree.io/f/mldqwdlp', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: form.name,
-        email: form.email,
-        message: form.message
-      })
+    const res = await fetch("https://formspree.io/f/mldqwdlp", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
     });
-
     if (res.ok) {
       submitted.value = true;
-      setTimeout(() => {
-        form.name = '';
-        form.email = '';
-        form.message = '';
-        submitted.value = false;
-      }, 3000);
-    } else {
-      alert('Failed to send message. Please try again.');
-    }
-  } catch (err) {
-    console.error(err);
-    alert('Error sending message. Check console.');
-  }
-}
+      setTimeout(() => { form.name = ""; form.email = ""; form.message = ""; submitted.value = false; }, 3000);
+    } else alert("Failed to send message.");
+  } catch { alert("Error sending message."); }
+};
+
+const callForm = reactive({ name: "", email: "", date: "", time: "", purpose: "" });
+const callSubmitted = ref(false);
+const handleCallSubmit = async () => {
+  try {
+    const res = await fetch("https://formspree.io/f/mldqwdlp", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ type: "CALL_REQUEST", ...callForm }),
+    });
+    if (res.ok) {
+      callSubmitted.value = true;
+      setTimeout(() => { callForm.name = ""; callForm.email = ""; callForm.date = ""; callForm.time = ""; callForm.purpose = ""; callSubmitted.value = false; }, 3000);
+    } else alert("Failed to submit call request.");
+  } catch { alert("Error submitting call request."); }
+};
 </script>
