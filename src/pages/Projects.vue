@@ -71,7 +71,7 @@ const projects: Project[] = [
     title: 'EduTrack',
     description: 'A comprehensive educational management system designed to streamline student tracking, attendance, and performance monitoring for educational institutions.',
     tags: ['Vue.js', 'PHP', 'MySQL', 'Education'],
-    link: '#'
+    link: 'https://github.com/abdullahalnahid0503/EduTrack'
   },
   {
     title: 'The Lab Thirteen',
@@ -83,25 +83,25 @@ const projects: Project[] = [
     title: 'ISS UTMKL Website',
     description: 'Official website for the International Student Society at UTM Kuala Lumpur, connecting students and promoting cultural exchange.',
     tags: ['Vue.js', 'Web Development', 'Community'],
-    link: '#'
+    link: 'https://github.com/abdullahalnahid0503/issutmkl'
   },
   {
     title: 'Narsingdi Global Network',
     description: 'A digital platform connecting diaspora members from Narsingdi district worldwide, fostering collaboration and cultural preservation.',
     tags: ['Networking', 'Community', 'Web Platform'],
-    link: '#'
+    link: 'https://github.com/abdullahalnahid0503/NarsingdiGlobalConnect'
   },
   {
     title: 'Portfolio Management System',
     description: 'A dynamic portfolio management tool helping professionals showcase their work with customizable templates and analytics.',
     tags: ['Vue.js', 'Tailwind', 'TypeScript'],
-    link: '#'
+    link: 'https://github.com/abdullahalnahid0503/carevia'
   },
   {
     title: 'Event Organizer Pro',
     description: 'An all-in-one event management solution with features for registration, ticketing, and real-time attendee tracking.',
     tags: ['PHP', 'MySQL', 'Events'],
-    link: '#'
+    link: 'https://github.com/abdullahalnahid0503/EventPro'
   }
 ]
 </script>
