@@ -19,8 +19,9 @@
   as the Vice President of the International Student Society at UTMKL (ISS UTMKL),
   where I represent international students and lead initiatives that strengthen
   cross cultural engagement on campus. I also serve as the Vice Chairman of the
-  Institution of Engineers Malaysia, UTMKL Student Chapter (IEM UTMKL) and as the Vice President
-  of the Bangladeshi Students' Organization Malaysia (BSOM).
+  Institution of Engineers Malaysia, UTMKL Student Chapter (IEM UTMKL) and I am 
+  also actively engaged as a human rights activist with Amnesty International, 
+  advocating for justice, equality, and the protection of fundamental freedoms.
 </p>
 
 <p class="text-zinc-400 leading-relaxed mb-4">
@@ -37,6 +38,12 @@
   technology solutions that empower youth and support innovation. My work blends
   software engineering, social impact, and strategic leadership to drive purposeful
   progress within communities.
+</p>
+
+<p class="text-zinc-400 leading-relaxed">
+  Outside of tech, I enjoy traveling, long drives, community building, and exploring
+  how technology and leadership can shape better futures, especially for underserved
+  and international communities.
 </p>
 
         </section>
