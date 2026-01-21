@@ -13,39 +13,29 @@
             Biography
           </h2>
 
-          <p class="text-zinc-400 leading-relaxed mb-4">
-  I'm Abdullah Al Nahid, a Bangladeshi software engineering student, youth leader,
-  and community driven innovator currently based in Kuala Lumpur, Malaysia. I serve
-  as the Vice President of the International Student Society at UTMKL (ISS UTMKL),
-  where I represent international students and lead initiatives that strengthen
-  cross cultural engagement on campus. I also serve as the Vice Chairman of the
-  Institution of Engineers Malaysia, UTMKL Student Chapter (IEM UTMKL) and I am 
-  also actively engaged as a human rights activist with Amnesty International, 
-  advocating for justice, equality, and the protection of fundamental freedoms.
+          <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
+  I am Abdullah Al Nahid, a Bangladeshi software engineering student, youth leader, and community-driven innovator currently based in Kuala Lumpur, Malaysia. My work lies at the intersection of technology, student leadership, and social impact, with a strong focus on ethical innovation, cross-cultural engagement, and youth representation.
 </p>
 
-<p class="text-zinc-400 leading-relaxed mb-4">
-  Beyond academics, I'm actively involved in leadership and public affairs. Over the
-  years, I've contributed to organizations such as UNICEF, UNESCO, AIESEC Malaysia,
-  ISSBD, and ISS UTM JB. I am also a member of Amnesty International, where I engage
-  in human rights advocacy and youth empowerment. My work in student leadership and
-  community engagement has been featured across 20+ local and international media outlets, reflecting
-  my commitment to meaningful, student centered change.
+<p class="text-zinc-400 leading-relaxed mb-4 text-justify">
+I currently serve as the Vice President of the International Student Society at Universiti Teknologi Malaysia, Kuala Lumpur (ISS UTMKL), where I represent international students and lead initiatives that strengthen institutional dialogue, student welfare, and intercultural collaboration. Alongside this role, I serve as Vice Chairman of the Institution of Engineers Malaysia (IEM) UTMKL Student Chapter, contributing to engineering leadership, professional development, and student industry engagement.
 </p>
 
-<p class="text-zinc-400 leading-relaxed mb-4">
-  As the founder of The Lab Thirteen, I focus on creating ethical, human centered
-  technology solutions that empower youth and support innovation. My work blends
-  software engineering, social impact, and strategic leadership to drive purposeful
-  progress within communities.
+<p class="text-zinc-400 leading-relaxed mb-4 text-justify">
+Beyond campus leadership, I am actively engaged in human rights advocacy with Amnesty International, supporting efforts that promote justice, equality, and the protection of fundamental freedoms. Over the years, I have contributed to organisations such as UNICEF, UNESCO, AIESEC Malaysia, ISSBD, and ISS UTM Johor Bahru, particularly in areas related to public affairs, media strategy, internationalisation, and community development.
 </p>
 
-<p class="text-zinc-400 leading-relaxed">
-  Outside of tech, I enjoy traveling, long drives, community building, and exploring
-  how technology and leadership can shape better futures, especially for underserved
-  and international communities.
+<p class="text-zinc-400 leading-relaxed mb-4 text-justify">
+My work in student leadership and civic engagement has been featured across more than 20 national and international media outlets, reflecting my commitment to principled, student-centred leadership and constructive public discourse.
 </p>
 
+<p class="text-zinc-400 leading-relaxed mb-4 text-justify">
+I am also the Founder of The Lab Thirteen, an innovation-driven initiative focused on building ethical, human-centred technology solutions. Through this platform, I combine software engineering, strategic thinking, and social responsibility to design solutions that empower youth, strengthen communities, and align innovation with long term societal value.
+</p>
+
+<p class="text-zinc-400 leading-relaxed mb-4 text-justify">
+Driven by a belief in fairness, accountability, and purposeful progress, I continue to work toward building systems, both technical and institutional, that put people first and create lasting impact.
+</p>
         </section>
 
         <!-- EDUCATION -->
@@ -209,7 +199,7 @@
             Interests
           </h2>
 
-          <p class="text-zinc-400 leading-relaxed">
+          <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
     Outside of software engineering, I enjoy traveling, long drives, community building,
     and exploring international issues that shape youth, policy, and society. My interests
     extend to human rights advocacy, global development work, and initiatives that bring
@@ -217,10 +207,10 @@
     empowering new developers, and creating technology that aligns with ethical, social,
     and cultural values.
     <br><br>
-    Looking ahead, I plan to pursue a master’s degree abroad and develop a career rooted
+    Looking ahead, I plan to pursue a master's degree abroad and develop a career rooted
     in strategic leadership, innovation, and public service. My long-term vision includes
     contributing to international development, driving meaningful community change, and
-    helping create better opportunities for underserved and international communities.
+    helping create better opportunities for underprivileged and international communities.
           </p>
         </section>
 
