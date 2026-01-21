@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import BackgroundEffect from './components/BackgroundEffect.vue'
+import { Analytics } from '@vercel/analytics/vue'
 </script>
 
 <template>
@@ -12,5 +13,6 @@ import BackgroundEffect from './components/BackgroundEffect.vue'
       <router-view />
     </main>
     <Footer />
+    <Analytics />
   </div>
 </template>
