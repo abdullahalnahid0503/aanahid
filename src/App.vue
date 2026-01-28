@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Analytics } from '@vercel/analytics/vue'
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import BackgroundEffect from './components/BackgroundEffect.vue'
@@ -6,6 +7,7 @@ import BackgroundEffect from './components/BackgroundEffect.vue'
 
 <template>
   <div class="min-h-screen flex flex-col bg-black transition-colors duration-500">
+    <Analytics />
     <BackgroundEffect />
     <Navbar />
     <main class="flex-1 relative z-10">
