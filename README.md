@@ -42,7 +42,7 @@ This website is built with modern, lightweight, and responsive technologies to e
 
 I'm always open to collaboration, feedback, and new opportunities. You can reach me via:
 
-- 📧 Email: mailto:al20@graduate.utm.my
+- 📧 Email: al20@graduate.utm.my
 - 🔗 LinkedIn: [linkedin.com/in/abdullahalnahid0503](https://www.linkedin.com/in/abdullahalnahid0503)  
 - 🐦 Twitter: [twitter.com/aanahid0503](https://twitter.com/aanahid0503)  
 
