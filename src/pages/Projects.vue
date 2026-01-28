@@ -104,8 +104,4 @@ const projects: Project[] = [
     link: 'https://github.com/abdullahalnahid0503/EventPro'
   }
 ]
-<<<<<<< HEAD
 </script>
-=======
-</script>
->>>>>>> 8473ad3aa10fa6a40f8753e6a7286ce360cd2428
