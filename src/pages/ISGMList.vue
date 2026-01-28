@@ -7,7 +7,7 @@
       </h1>
 
       <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
-        When I first arrived in Malaysia as an international student, I was excited… but also completely lost. Simple things like getting a SIM card, finding a taxi, or figuring out payments felt overwhelming. I remember wishing someone had just told me the basics. Not the fancy stuff. Just the real-life survival information.
+        When I first arrived in Malaysia as an international student, I was excited… but also completely lost. Simple things like getting a SIM card, finding a taxi, or figuring out payments felt overwhelming. I remember wishing someone had just told me the basics. Not the fancy stuff, just the real-life survival information.
       </p>
 
       <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
@@ -19,7 +19,7 @@
       </p>
 
       <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
-        Living in Malaysia as a student is truly an adventure rich in culture, friendly people and amazing food but, being informed is what turns that adventure into an enjoyable one. Keep these tips in your back pocket, and you'll navigate student life in Malaysia with confidence, not confusion.
+        Living in Malaysia as a student is truly an adventure rich in culture, friendly people, and amazing food. Being informed is what turns that adventure into an enjoyable one. Keep these tips in your back pocket, and you'll navigate student life in Malaysia with confidence, not confusion.
       </p>
 
       <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
