@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@vercel/analytics": "^1.4.0",
+>>>>>>> 8473ad3aa10fa6a40f8753e6a7286ce360cd2428
     "vue": "^3.4.38"
   },
   "devDependencies": {

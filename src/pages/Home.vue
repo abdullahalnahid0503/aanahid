@@ -83,7 +83,10 @@ const navLinks = [
   { name: 'About', path: '/about' },
   { name: 'Projects', path: '/projects' },
   { name: 'Blog', path: '/blog' },
+<<<<<<< HEAD
   { name: 'Guide to Malaysia', path: '/guidetomalaysia' },
+=======
+>>>>>>> 8473ad3aa10fa6a40f8753e6a7286ce360cd2428
   { name: 'Contact', path: '/contact' }
 ]
 
@@ -115,8 +118,13 @@ const cards = [
   {
     icon: '🌍',
     title: 'Impact',
+<<<<<<< HEAD
     description: 'International Students Guide to Malaysia',
     path: '/guidetomalaysia'
+=======
+    description: 'Ethical technology for change',
+    path: '/about'
+>>>>>>> 8473ad3aa10fa6a40f8753e6a7286ce360cd2428
   },
   {
     icon: '📧',
