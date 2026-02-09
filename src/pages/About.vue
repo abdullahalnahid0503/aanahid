@@ -14,23 +14,23 @@
           </h2>
 
           <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
-            I am Abdullah Al Nahid, a Bangladeshi software engineering student, youth leader, and community-driven innovator currently based in Kuala Lumpur, Malaysia. My work lies at the intersection of technology, student leadership, and social impact, with a strong focus on ethical innovation, cross-cultural engagement, and youth representation.
+            I am Abdullah Al Nahid, a Bangladeshi software engineering student, youth leader, and community-driven innovator currently based in Kuala Lumpur, Malaysia. My work sits at the intersection of technology, student leadership, and social impact, with a focus on ethical innovation, cross-cultural engagement, and youth representation.
           </p>
 
           <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
-            I currently serve as the Vice President of the International Student Society at Universiti Teknologi Malaysia, Kuala Lumpur (ISS UTMKL), where I represent international students and lead initiatives that strengthen institutional dialogue, student welfare, and intercultural collaboration. Alongside this role, I serve as Vice Chairman of the Institution of Engineers Malaysia (IEM) UTMKL Student Chapter, contributing to engineering leadership, professional development, and student industry engagement.
+            I currently serve as Vice President of the International Student Society at Universiti Teknologi Malaysia, Kuala Lumpur (ISS UTMKL), where I represent international students and lead initiatives that strengthen institutional dialogue, student welfare, and intercultural collaboration. Alongside this role, I am Vice Chairman of the Institution of Engineers Malaysia (IEM) UTMKL Student Chapter, contributing to engineering leadership, professional development, and student-industry engagement.
           </p>
 
           <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
-            Beyond campus leadership, I am actively engaged in human rights advocacy with Amnesty International, supporting efforts that promote justice, equality, and the protection of fundamental freedoms. Over the years, I have contributed to organisations such as UNICEF, UNESCO, AIESEC Malaysia, ISSBD, and ISS UTM Johor Bahru, particularly in areas related to public affairs, media strategy, internationalisation, and community development.
+            Beyond campus leadership, I am actively involved in human rights advocacy with Amnesty International, supporting efforts that promote justice, equality, and the protection of fundamental freedoms. Over the years, I have contributed to organizations such as UNICEF, UNESCO, AIESEC Malaysia, ISSBD, and ISS UTM Johor Bahru, particularly in public affairs, media strategy, internationalisation, and community development.
           </p>
 
           <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
-            My work in student leadership and civic engagement has been featured across more than 20 national and international media outlets, reflecting my commitment to principled, student-centred leadership and constructive public discourse.
+            My work in student leadership and civic engagement has been featured across more than 20 national and international media outlets, reflecting a commitment to principled, student-centered leadership and constructive public discourse.
           </p>
 
           <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
-            I am also the Founder of The Lab Thirteen, an innovation-driven initiative focused on building ethical, human-centred technology solutions. Through this platform, I combine software engineering, strategic thinking, and social responsibility to design solutions that empower youth, strengthen communities, and align innovation with long term societal value.
+            I am also the Founder of The Lab Thirteen, an innovation-driven initiative focused on building ethical, human-centered technology solutions. Through this platform, I combine software engineering, strategic thinking, and social responsibility to design solutions that empower youth, strengthen communities, and align innovation with long-term societal value.
           </p>
 
           <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
@@ -38,26 +38,23 @@
           </p>
         </section>
 
-        <!-- HOBBIES -->
+        <!-- What I Care About -->
         <section class="mb-12">
           <h2 class="text-2xl font-semibold text-zinc-100 mb-4 mt-12">
-            Hobbies
-          </h2>
-
-          <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
-            I am passionate about driving and have explored almost the entire Malaysian peninsula behind the wheel, enjoying long road trips and scenic routes. Coin collecting is another long-standing hobby of mine. I have amassed an extensive collection of coins from different decades and countries, including rare commemorative coins that mark significant historical events. Music has always been a part of my life. I was a child musician during primary school, and today I enjoy listening to a wide variety of genres, occasionally singing with friends and family. I also love watching documentaries, particularly political and historical ones, as they broaden my understanding of the world. Finally, I enjoy experimenting with personal tech projects and engaging in creative problem-solving, combining my curiosity for technology with hands-on innovation.
-          </p>
-        </section>
-
-        <!-- INTERESTS -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-semibold text-zinc-100 mb-4 mt-12">
-            Interests
+            What I Care About
           </h2>
           <p class="text-zinc-400 leading-relaxed mb-4 text-justify">
-            Outside of software engineering, I enjoy traveling, long drives, community building, and exploring international issues that shape youth, policy, and society. My interests extend to human rights advocacy, global development work, and initiatives that bring diverse communities together. I am passionate about building youth-focused platforms, empowering new developers, and creating technology that aligns with ethical, social, and cultural values.
+            Having explored much of the Malaysian peninsula through long road trips, I have developed a strong interest in driving and travel, valuing scenic routes and moments of quiet reflection. These experiences have allowed me to engage deeply with my surroundings while appreciating independence and exploration.
             <br><br>
-            Looking ahead, I plan to pursue a master's degree abroad and develop a career rooted in strategic leadership, innovation, and public service. My long-term vision includes contributing to international development, driving meaningful community change, and helping create better opportunities for underprivileged and international communities.
+            Alongside this, I am an avid coin collector with an extensive collection spanning multiple decades and countries, including rare commemorative coins that capture significant historical events. This hobby reflects my long-standing interest in history and global narratives.
+            <br><br>
+            I also engage closely with political and historical documentaries, which have broadened my understanding of international affairs, governance, and the social forces shaping societies. These interests have strengthened my awareness of global issues and policy-related challenges.
+            <br><br>
+            Beyond these personal interests, I enjoy experimenting with technology through small personal projects and creative problem-solving. This allows me to combine hands-on innovation with curiosity-driven learning, particularly in areas that intersect with software engineering.
+            <br><br>
+            Outside of technical work, I am deeply interested in community building, human rights advocacy, and global development initiatives. I am especially passionate about youth-focused platforms, empowering new developers, and creating technology aligned with ethical, social, and cultural values.
+            <br><br>
+            Looking ahead, I aim to pursue a master’s degree abroad and build a career grounded in strategic leadership, innovation, and public service, with the long-term goal of contributing to international development and meaningful community impact.
           </p>
         </section>
 
