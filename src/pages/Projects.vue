@@ -75,8 +75,8 @@ const projects: Project[] = [
   },
   {
     title: 'The Lab Thirteen',
-    description: 'A youth-driven innovation hub fostering technological solutions and social entrepreneurship among young Bangladeshi innovators.',
-    tags: ['Social Impact', 'Innovation', 'Community'],
+    description: 'A youth-driven innovation hub built by a collective of young Bangladeshi innovators, fostering technological solutions and social entrepreneurship.',
+    tags: ['Collaboration', 'Innovation', 'Community'],
     link: 'https://thelabthirteen.com'
   },
   {
