@@ -40,10 +40,10 @@ const post: BlogPost = {
   কতো নামেই 'তাকে' ডাকি<br>
   মেটে না পিপাসা।<br>
   <em>~"Fagun Elei" by Asad Chowdhury</em>
-</blockquote>
+</blockquote><br>
 
     <p>
-      Today we remember the martyrs and recommit ourselves to honoring their sacrifice by speaking, writing, and promoting Bangla with pride wherever we are.
+      Today, we remember the martyrs and recommit ourselves to honoring their sacrifice by speaking, writing, and promoting Bangla with pride wherever we are.
     </p>
 
     <p>
