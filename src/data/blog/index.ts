@@ -1,3 +1,4 @@
+import internationalmotherlanguageday2026 from "./posts/international-mother-language-day-bdhckl-2026"
 import issCamp from "./posts/iss-utmkl-management-camp-2025-26"
 import mjiitservicelearning from "./posts/mjiit-service-learning-showcase-2026"
 import utmklinternationalculturalday from "./posts/utmkl-international-cultural-day-2025"
@@ -10,6 +11,7 @@ import bowlersbonanza2025 from "./posts/bowlers-bonanza-2025"
 import artAsean2025 from "./posts/art-asean-2025"
 
 export const blogPosts = [
+  internationalmotherlanguageday2026,
   issCamp,
   mjiitservicelearning,
   utmklinternationalculturalday,

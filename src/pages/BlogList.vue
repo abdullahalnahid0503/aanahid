@@ -68,6 +68,14 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
 
+{
+    slug: 'international-mother-language-day-bdhckl-2026',
+    title: 'Honoring International Mother Language Day and National Martyrs’ Day',
+    date: '21 February 2026',
+    excerpt:
+      'Malaysia’s Bangladeshi community celebrates International Mother Language Day and National Martyrs’ Day with a meaningful observance at the Bangladesh High Commission in Kuala Lumpur.',
+    image: new URL('../assets/international-mother-language-day-bdhckl-2026.png', import.meta.url).href
+  },
       {
     slug: 'iss-utmkl-management-camp-2025-26',
     title: 'ISS UTMKL Management Camp & Yearly Activities 2025/26',
