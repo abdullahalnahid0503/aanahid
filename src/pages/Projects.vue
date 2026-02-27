@@ -14,6 +14,11 @@
           :key="project.title"
           class="group relative bg-zinc-900/30 backdrop-blur-md border border-zinc-800/50 rounded-xl hover:border-blue-500/50 transition-all duration-500 overflow-hidden"
         >
+        <img
+  :src="project.image"
+  :alt="project.title"
+  class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-105"
+/>
           <div class="absolute inset-0 bg-gradient-to-br from-blue-600/0 via-purple-600/0 to-pink-600/0 group-hover:from-blue-600/10 group-hover:via-purple-600/5 group-hover:to-pink-600/10 transition-all duration-500"></div>
 
           <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -21,7 +26,7 @@
             <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
           </div>
 
-          <div class="relative p-6">
+          <div class="relative p-6 flex flex-col h-full">
             <h3 class="text-2xl font-semibold text-zinc-100 group-hover:text-white mb-3 transition-colors duration-300">
               {{ project.title }}
             </h3>
@@ -59,10 +64,18 @@
 </template>
 
 <script setup lang="ts">
+import edutrackImg from '../assets/projects/edutrack.png'
+import labImg from '../assets/projects/labthirteen.png'
+import visaImg from '../assets/projects/visa-portal.png'
+import narsingdiImg from '../assets/projects/narsingdi.png'
+import careviaImg from '../assets/projects/carevia.png'
+import eventproImg from '../assets/projects/eventpro.png'
+
 interface Project {
   title: string
   description: string
   tags: string[]
+  image: string
   link?: string
 }
 
@@ -71,36 +84,42 @@ const projects: Project[] = [
     title: 'EduTrack',
     description: 'A comprehensive educational management system designed to streamline student tracking, attendance, and performance monitoring for educational institutions.',
     tags: ['Vue.js', 'PHP', 'MySQL', 'Education'],
+    image: edutrackImg,
     link: 'https://github.com/abdullahalnahid0503/EduTrack'
   },
   {
     title: 'The Lab Thirteen',
     description: 'A youth-driven innovation hub built by a collective of young Bangladeshi innovators, fostering technological solutions and social entrepreneurship.',
     tags: ['Collaboration', 'Innovation', 'Community'],
+    image: labImg,
     link: 'https://thelabthirteen.com'
   },
   {
-    title: 'ISS UTMKL Website',
-    description: 'Official website for the International Student Society at UTM Kuala Lumpur, connecting students and promoting cultural exchange.',
-    tags: ['Vue.js', 'Web Development', 'Community'],
+    title: 'UTMKL Visa & Student Pass Renewal Portal',
+    description: 'A student-focused portal designed to streamline visa and student pass renewal processes at UTM Kuala Lumpur.',
+    tags: ['Web Platform', 'Students', 'Automation'],
+    image: visaImg,
     link: 'https://github.com/abdullahalnahid0503/issutmkl'
   },
   {
     title: 'Narsingdi Global Network',
     description: 'A digital platform connecting diaspora members from Narsingdi district worldwide, fostering collaboration and cultural preservation.',
     tags: ['Networking', 'Community', 'Web Platform'],
+    image: narsingdiImg,
     link: 'https://github.com/abdullahalnahid0503/NarsingdiGlobalConnect'
   },
   {
     title: 'Portfolio Management System',
     description: 'A dynamic portfolio management tool helping professionals showcase their work with customizable templates and analytics.',
     tags: ['Vue.js', 'Tailwind', 'TypeScript'],
+    image: careviaImg,
     link: 'https://github.com/abdullahalnahid0503/carevia'
   },
   {
     title: 'Event Organizer Pro',
     description: 'An all-in-one event management solution with features for registration, ticketing, and real-time attendee tracking.',
     tags: ['PHP', 'MySQL', 'Events'],
+    image: eventproImg,
     link: 'https://github.com/abdullahalnahid0503/EventPro'
   }
 ]
