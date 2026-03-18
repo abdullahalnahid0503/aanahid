@@ -1,11 +1,11 @@
 import type { BlogPost } from "../types"
 
 const post: BlogPost = {
-  slug: "abdullahalnahid-ISSUTMKL-VP",
+  slug: "abdullahalnahid-issutmkl-VP",
   title: "Media Recognition - ISS UTMKL VP Election",
   date: "30 November 2025",
   image: new URL(
-    "../../../assets/abdullahalnahid-ISSUTMKL-VP.png",
+    "../../../assets/abdullahalnahid-issutmkl-VP.png",
     import.meta.url
   ).href,
   content: `

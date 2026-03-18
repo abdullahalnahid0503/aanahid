@@ -1,3 +1,5 @@
+import ramadanoutreach2026 from "./posts/ramadan-outreach-issutmkl-2026"
+import globalIftar2026 from "./posts/global-iftar-issutmkl-2026"
 import internationalmotherlanguageday2026 from "./posts/international-mother-language-day-bdhckl-2026"
 import issCamp from "./posts/iss-utmkl-management-camp-2025-26"
 import mjiitservicelearning from "./posts/mjiit-service-learning-showcase-2026"
@@ -11,6 +13,8 @@ import bowlersbonanza2025 from "./posts/bowlers-bonanza-2025"
 import artAsean2025 from "./posts/art-asean-2025"
 
 export const blogPosts = [
+  ramadanoutreach2026,
+  globalIftar2026,
   internationalmotherlanguageday2026,
   issCamp,
   mjiitservicelearning,

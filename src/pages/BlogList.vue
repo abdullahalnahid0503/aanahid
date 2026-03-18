@@ -69,6 +69,22 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
 
 {
+  slug: 'ramadan-outreach-issutmkl-2026',
+  title: 'Ramadan Outreach Initiative 2026 at UTMKL',
+  date: '14 March 2026',
+  excerpt:
+    'UTM International Kuala Lumpur Campus, with the support of ISS UTMKL, leads a Ramadan outreach initiative providing essential aid and community engagement activities for Palestinian families in Malaysia, reflecting the values of compassion, solidarity, and social responsibility.',
+  image: new URL('../assets/ramadan-outreach-issutmkl-2026.png', import.meta.url).href
+},
+{
+  slug: 'global-iftar-issutmkl-2026',
+  title: 'Global Iftar 2026 at UTMKL',
+  date: '12 March 2026',
+  excerpt:
+    'ISS UTMKL, in collaboration with UTM International Kuala Lumpur Campus, hosts Global Iftar 2026, bringing together students from diverse backgrounds to celebrate unity, compassion, and the spirit of Ramadan.',
+  image: new URL('../assets/global-iftar-issutmkl-2026.png', import.meta.url).href
+},
+{
     slug: 'international-mother-language-day-bdhckl-2026',
     title: 'Honoring International Mother Language Day and National Martyrs’ Day',
     date: '21 February 2026',
@@ -109,12 +125,12 @@ const blogPosts: BlogPost[] = [
     image: new URL('../assets/UTMKL-IEM-AWCS-Visit.jpg', import.meta.url).href
   },
       {
-    slug: 'abdullahalnahid-ISSUTMKL-VP',
+    slug: 'abdullahalnahid-issutmkl-VP',
     title: 'Media Recognition - ISS UTMKL VP Election',
     date: '30 November 2025',
     excerpt:
       'Journalism plays a vital role in amplifying student voices and giving visibility to international leadership.',
-    image: new URL('../assets/abdullahalnahid-ISSUTMKL-VP.png', import.meta.url).href
+    image: new URL('../assets/abdullahalnahid-issutmkl-VP.png', import.meta.url).href
   },
     {
     slug: 'miul-2025',
