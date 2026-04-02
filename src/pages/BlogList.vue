@@ -69,6 +69,14 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
 
 {
+  slug: 'cybersecurity-warfare-modern-conflict',
+  title: 'Cybersecurity and Warfare: The Invisible Battlefield of Modern Conflict',
+  date: '02 April 2026',
+  excerpt:
+    'As global conflicts evolve, cyberspace has emerged as a critical battlefield where nations engage in silent yet powerful attacks. This article explores the rise of cyber warfare, real-world case studies, and the growing importance of cybersecurity in protecting modern societies from digital threats.',
+  image: new URL('../assets/cybersecurity-and-warfare.png', import.meta.url).href
+},
+{
   slug: 'ramadan-outreach-issutmkl-2026',
   title: 'Ramadan Outreach Initiative 2026 at UTMKL',
   date: '14 March 2026',
