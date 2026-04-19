@@ -59,7 +59,7 @@
               March 2023 - Expected March 2027
             </p>
             <p class="font-medium">
-              Bachelor of Computer Science (Software Engineering), with Honours
+              <b>Bachelor of Computer Science (Software Engineering), with Honours</b>
             </p>
             <p class="text-zinc-400 text-sm">
               Universiti Teknologi Malaysia, Kuala Lumpur (UTMKL)
@@ -72,7 +72,7 @@
 
           <div>
             <p class="font-medium">
-              HSC - Narsingdi Model College, Narsingdi, Bangladesh
+              <b>HSC - Narsingdi Model College, Narsingdi, Bangladesh</b>
             </p>
             <p class="text-zinc-400 text-sm">
               <ul class="list-disc list-inside text-sm mt-2 space-y-1">
@@ -83,7 +83,7 @@
 
           <div>
             <p class="font-medium">
-              SSC - Brahmandi KKM Government High School, Narsingdi, Bangladesh
+              <b>SSC - Brahmandi KKM Government High School, Narsingdi, Bangladesh</b>
             </p>
             <p class="text-zinc-400 text-sm">
               <ul class="list-disc list-inside text-sm mt-2 space-y-1">
@@ -122,7 +122,7 @@
               <b>ISS UTMKL</b> - Vice President, International Student Society
             </p>
             <ul class="list-disc list-inside text-sm mt-2 space-y-1">
-              <li>Represented 1200+ international students and facilitated key partnerships with university offices</li>
+              <li>Represented 1,200+ international students from 83 nationalities; built key university partnerships</li>
               <li>Led student engagement for ASEAN 2025 roundtable attended by 30+ ambassadors</li>
               <li>
                 Initiated cultural unity efforts by forming Bangladeshi, Pakistani, Indian, Indonesian,
