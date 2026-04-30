@@ -5,7 +5,7 @@ const post: BlogPost = {
   title: "Defence Services Asia (DSA) 2026",
   date: "23 April 2026",
   image: new URL(
-    "../../../assets/dsa-2026.png",
+    "../../../assets/DSA-2026.png",
     import.meta.url
   ).href,
   content: `
