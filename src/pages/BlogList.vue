@@ -74,7 +74,7 @@ const blogPosts: BlogPost[] = [
   date: '23 April 2026',
   excerpt:
     'The Defence Services Asia (DSA) 2026 exhibition, held on 23 April 2026, marked the final day of one of Asia’s largest and most significant defence and security events. The exhibition served as a powerful platform showcasing the intersection of strategy, innovation, and global collaboration in the modern defence landscape.',
-  image: new URL('../assets/dsa-2026.png', import.meta.url).href
+  image: new URL('../assets/DSA-2026.png', import.meta.url).href
 },
 {
   slug: 'cybersecurity-warfare-modern-conflict',
