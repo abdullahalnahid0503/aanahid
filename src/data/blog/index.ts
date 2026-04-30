@@ -1,3 +1,4 @@
+import DSA from "./posts/DSA-2026"
 import cybersecurityWarfare from "./posts/cybersecurity-warfare-modern-conflict"
 import ramadanoutreach2026 from "./posts/ramadan-outreach-issutmkl-2026"
 import globalIftar2026 from "./posts/global-iftar-issutmkl-2026"
@@ -14,6 +15,7 @@ import bowlersbonanza2025 from "./posts/bowlers-bonanza-2025"
 import artAsean2025 from "./posts/art-asean-2025"
 
 export const blogPosts = [
+  DSA,
   cybersecurityWarfare,
   ramadanoutreach2026,
   globalIftar2026,
