@@ -292,7 +292,7 @@ const flashcards = reactive<Flashcard[]>([
   margin-top: 100px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 0px;
 }
 
 .pendulum-ball {
