@@ -144,12 +144,12 @@
 </a>
 
 <a
-  href="https://www.facebook.com/nahidified"
+href="https://www.facebook.com/nahidified"
   target="_blank"
   rel="noopener noreferrer"
   class="pendulum-ball"
 >
-  <svg class="w-6 h-6 flex items-center justify-center" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <circle cx="12" cy="12" r="12" fill="#1877F2"/>
     <path d="M15.5 12.5h-2.2V20h-3.1v-7.5H8.5V9.9h1.7V8.4c0-1.7 0.9-3.2 3.4-3.2h2.1v2.6h-1.5c-0.7 0-0.8 0.3-0.8 0.8v1.3h2.4l-0.3 2.6z" fill="#FFFFFF"/>
   </svg>
