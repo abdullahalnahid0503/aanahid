@@ -137,7 +137,7 @@
   rel="noopener noreferrer"
   class="pendulum-ball pendulum-ball--start"
 >
-  <svg class="w-6 h-6" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+  <svg class="w-6 h-6 flex items-center justify-center" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
     <path d="M27.4 3.1C27.1 1.9 26.2 1 25 0.7 22.7 0 14 0 14 0S5.3 0 3 0.7C1.8 1 0.9 1.9 0.6 3.1 0 5.4 0 10 0 10s0 4.6 0.6 6.9c0.3 1.2 1.2 2.1 2.4 2.4C5.3 20 14 20 14 20s8.7 0 11-0.7c1.2-0.3 2.1-1.2 2.4-2.4C28 14.6 28 10 28 10s0-4.6-0.6-6.9z" fill="#FF0000"/>
     <path d="M11 14.3 18.5 10 11 5.7z" fill="#FFFFFF"/>
   </svg>
@@ -149,7 +149,7 @@
   rel="noopener noreferrer"
   class="pendulum-ball"
 >
-  <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <svg class="w-6 h-6 flex items-center justify-center" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <circle cx="12" cy="12" r="12" fill="#1877F2"/>
     <path d="M15.5 12.5h-2.2V20h-3.1v-7.5H8.5V9.9h1.7V8.4c0-1.7 0.9-3.2 3.4-3.2h2.1v2.6h-1.5c-0.7 0-0.8 0.3-0.8 0.8v1.3h2.4l-0.3 2.6z" fill="#FFFFFF"/>
   </svg>
@@ -161,7 +161,7 @@
   rel="noopener noreferrer"
   class="pendulum-ball pendulum-ball--end"
 >
-  <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <svg class="w-6 h-6 flex items-center justify-center" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="igGradient" x1="0%" y1="100%" x2="100%" y2="0%">
         <stop offset="0%" stop-color="#FFDD55"/>
