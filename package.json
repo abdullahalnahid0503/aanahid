@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lucide/vue": "^1.20.0",
     "@vercel/analytics": "^1.6.1",
     "vue": "^3.4.38"
   },
