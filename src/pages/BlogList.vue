@@ -67,7 +67,46 @@ interface BlogPost {
 }
 
 const blogPosts: BlogPost[] = [
-
+{
+  slug: 'fyp1',
+  title: 'Completing FYP1: A Journey of System Development, Learning, and Growth',
+  date: '09 July 2026',
+  excerpt:
+    'Reflecting on the completion of Final Year Project 1 (FYP1), a challenging journey involving system development, technical documentation, problem-solving, and continuous learning as a Software Engineering student.',
+  image: new URL('../assets/fyp1-completion.jpg', import.meta.url).href
+},
+{
+  slug: 'nahidified',
+  title: 'Introducing Nahidified: A Journey of Learning, Leadership, and Giving Back',
+  date: '22 June 2026',
+  excerpt:
+    'Introducing Nahidified, a platform created to share experiences, insights, and practical knowledge about international education, scholarships, career development, leadership, and personal growth.',
+  image: new URL('../assets/nahidified.jpg', import.meta.url).href
+},
+{
+  slug: 'sunway-hospitality-experience-2026',
+  title: 'An Unforgettable Fine Dining Experience at Sunway University',
+  date: '06 June 2026',
+  excerpt:
+    'A memorable visit to Sunway University for a fine dining experience organized by hospitality students, celebrating creativity, dedication, friendship, and the passion behind the world of hospitality and culinary arts.',
+  image: new URL('../assets/sunway-fine-dining.jpg', import.meta.url).href
+},
+{
+  slug: 'langkawi-adventure-2026',
+  title: 'Exploring Langkawi: Three Days of Adventure and Unforgettable Memories',
+  date: '10 May 2026',
+  excerpt:
+    'A memorable three-day journey across Langkawi filled with breathtaking landscapes, exciting adventures, scenic drives, and unforgettable moments while exploring one of Malaysia’s most beautiful islands.',
+  image: new URL('../assets/langkawi.jpg', import.meta.url).href
+},
+{
+  slug: 'improving-campus-transportation-2026',
+  title: 'Working Towards Better Transportation at UTM Kuala Lumpur',
+  date: '02 May 2026',
+  excerpt:
+    'Exploring practical solutions to improve transportation connectivity at UTM Kuala Lumpur through student feedback, collaboration with university stakeholders, and efforts to create a more convenient campus experience for both international and local students.',
+  image: new URL('../assets/isstransportation.jpg', import.meta.url).href
+},
 {
   slug: 'dsa-2026',
   title: 'Defence Services Asia (DSA) 2026',

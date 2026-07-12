@@ -1,3 +1,8 @@
+import fyp1 from "./posts/fyp1"
+import nahidified from "./posts/nahidified"
+import sunwayhospitality from "./posts/sunway-hospitality-experience-2026"
+import langkawiadventure from "./posts/langkawi-adventure-2026"
+import isstransportation from "./posts/improving-campus-transportation-2026"
 import DSA from "./posts/DSA-2026"
 import cybersecurityWarfare from "./posts/cybersecurity-warfare-modern-conflict"
 import ramadanoutreach2026 from "./posts/ramadan-outreach-issutmkl-2026"
@@ -15,6 +20,11 @@ import bowlersbonanza2025 from "./posts/bowlers-bonanza-2025"
 import artAsean2025 from "./posts/art-asean-2025"
 
 export const blogPosts = [
+  fyp1,
+  nahidified,
+  sunwayhospitality,
+  langkawiadventure,
+  isstransportation,
   DSA,
   cybersecurityWarfare,
   ramadanoutreach2026,
