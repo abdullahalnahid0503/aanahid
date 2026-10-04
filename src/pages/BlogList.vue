@@ -1,9 +1,7 @@
 <template>
   <div class="min-h-screen bg-transparent py-16 px-4 sm:px-6 lg:px-8">
     <div class="max-w-5xl mx-auto">
-      <h1 class="text-4xl md:text-5xl font-bold text-zinc-100 mb-4">
-        Blog
-      </h1>
+      <h1 class="text-4xl md:text-5xl font-bold text-zinc-100 mb-4">Blog</h1>
       <p class="text-lg text-zinc-400 mb-12">
         Thoughts, journeys, and experiences documented with visuals.
       </p>
@@ -32,10 +30,10 @@
 
             <p class="text-sm text-zinc-500 mb-4">{{ post.date }}</p>
 
-            <p class="text-zinc-300 mb-6 leading-relaxed">
-              {{ post.excerpt }}
-            </p>
-
+            <p
+              class="text-zinc-300 mb-6 leading-relaxed"
+              v-html="post.excerpt"
+            ></p>
             <router-link
               :to="`/blog/${post.slug}`"
               class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium transition-all duration-300"
@@ -47,7 +45,12 @@
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </router-link>
           </div>
@@ -59,177 +62,218 @@
 
 <script setup lang="ts">
 interface BlogPost {
-  slug: string
-  title: string
-  date: string
-  excerpt: string
-  image: string
+  slug: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  image: string;
 }
 
 const blogPosts: BlogPost[] = [
-{
-  slug: 'fyp1',
-  title: 'Completing FYP1: A Journey of System Development, Learning, and Growth',
-  date: '09 July 2026',
-  excerpt:
-    'Reflecting on the completion of Final Year Project 1 (FYP1), a challenging journey involving system development, technical documentation, problem-solving, and continuous learning as a Software Engineering student.',
-  image: new URL('../assets/fyp1-completion.jpg', import.meta.url).href
-},
-{
-  slug: 'nahidified',
-  title: 'Introducing Nahidified: A Journey of Learning, Leadership, and Giving Back',
-  date: '22 June 2026',
-  excerpt:
-    'Introducing Nahidified, a platform created to share experiences, insights, and practical knowledge about international education, scholarships, career development, leadership, and personal growth.',
-  image: new URL('../assets/nahidified.jpg', import.meta.url).href
-},
-{
-  slug: 'sunway-hospitality-experience-2026',
-  title: 'An Unforgettable Fine Dining Experience at Sunway University',
-  date: '06 June 2026',
-  excerpt:
-    'A memorable visit to Sunway University for a fine dining experience organized by hospitality students, celebrating creativity, dedication, friendship, and the passion behind the world of hospitality and culinary arts.',
-  image: new URL('../assets/sunway-fine-dining.jpg', import.meta.url).href
-},
-{
-  slug: 'langkawi-adventure-2026',
-  title: 'Exploring Langkawi: Three Days of Adventure and Unforgettable Memories',
-  date: '10 May 2026',
-  excerpt:
-    'A memorable three-day journey across Langkawi filled with breathtaking landscapes, exciting adventures, scenic drives, and unforgettable moments while exploring one of Malaysia’s most beautiful islands.',
-  image: new URL('../assets/langkawi.jpg', import.meta.url).href
-},
-{
-  slug: 'improving-campus-transportation-2026',
-  title: 'Working Towards Better Transportation at UTM Kuala Lumpur',
-  date: '02 May 2026',
-  excerpt:
-    'Exploring practical solutions to improve transportation connectivity at UTM Kuala Lumpur through student feedback, collaboration with university stakeholders, and efforts to create a more convenient campus experience for both international and local students.',
-  image: new URL('../assets/isstransportation.jpg', import.meta.url).href
-},
-{
-  slug: 'dsa-2026',
-  title: 'Defence Services Asia (DSA) 2026',
-  date: '23 April 2026',
-  excerpt:
-    'The Defence Services Asia (DSA) 2026 exhibition, held on 23 April 2026, marked the final day of one of Asia’s largest and most significant defence and security events. The exhibition served as a powerful platform showcasing the intersection of strategy, innovation, and global collaboration in the modern defence landscape.',
-  image: new URL('../assets/DSA-2026.png', import.meta.url).href
-},
-{
-  slug: 'cybersecurity-warfare-modern-conflict',
-  title: 'Cybersecurity and Warfare: The Invisible Battlefield of Modern Conflict',
-  date: '02 April 2026',
-  excerpt:
-    'As global conflicts evolve, cyberspace has emerged as a critical battlefield where nations engage in silent yet powerful attacks. This article explores the rise of cyber warfare, real-world case studies, and the growing importance of cybersecurity in protecting modern societies from digital threats.',
-  image: new URL('../assets/cybersecurity-and-warfare.png', import.meta.url).href
-},
-{
-  slug: 'ramadan-outreach-issutmkl-2026',
-  title: 'Ramadan Outreach Initiative 2026 at UTMKL',
-  date: '14 March 2026',
-  excerpt:
-    'UTM International Kuala Lumpur Campus, with the support of ISS UTMKL, leads a Ramadan outreach initiative providing essential aid and community engagement activities for Palestinian families in Malaysia, reflecting the values of compassion, solidarity, and social responsibility.',
-  image: new URL('../assets/ramadan-outreach-issutmkl-2026.png', import.meta.url).href
-},
-{
-  slug: 'global-iftar-issutmkl-2026',
-  title: 'Global Iftar 2026 at UTMKL',
-  date: '12 March 2026',
-  excerpt:
-    'ISS UTMKL, in collaboration with UTM International Kuala Lumpur Campus, hosts Global Iftar 2026, bringing together students from diverse backgrounds to celebrate unity, compassion, and the spirit of Ramadan.',
-  image: new URL('../assets/global-iftar-issutmkl-2026.png', import.meta.url).href
-},
-{
-    slug: 'international-mother-language-day-bdhckl-2026',
-    title: 'Honoring International Mother Language Day and National Martyrs’ Day',
-    date: '21 February 2026',
+  {
+    slug: "skill-quotient-group",
+    title:
+      "Stepping Into the Professional World: My Academic Internship at Skill Quotient",
+    date: "28 September 2026",
     excerpt:
-      'Malaysia’s Bangladeshi community celebrates International Mother Language Day and National Martyrs’ Day with a meaningful observance at the Bangladesh High Commission in Kuala Lumpur.',
-    image: new URL('../assets/international-mother-language-day-bdhckl-2026.png', import.meta.url).href
+      'Beginning a new chapter as an IT Support & Administration Intern at <a href="https://skillquotientgroup.com/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 no-underline hover:no-underline transition-colors"><strong>Skill Quotient</strong></a>, gaining practical experience and discovering how Software Engineering knowledge translates into the professional world.',
+    image: new URL("../assets/sqt.png", import.meta.url).href,
   },
-      {
-    slug: 'iss-utmkl-management-camp-2025-26',
-    title: 'ISS UTMKL Management Camp & Yearly Activities 2025/26',
-    date: '17 January 2026',
+  {
+    slug: "durpath",
+    title: "DurPath Academy: Building Education Without Barriers",
+    date: "08 August 2026",
     excerpt:
-      'ISS UTMKL kicks off 2026 with Management Camp 2025/26 and Yearly Activities Presentation, focusing on collaboration, wellbeing, and meaningful student leadership.',
-    image: new URL('../assets/ISS-UTMKL-Management-Camp-2025-26.jpeg', import.meta.url).href
+      "A meaningful new chapter as one of the founders of DurPath Academy, an education platform built with a vision to make quality education more accessible and impactful.",
+    image: new URL("../assets/durpath.png", import.meta.url).href,
   },
-      {
-    slug: 'mjiit-service-learning-showcase-2026',
-    title: 'MJIIT Software Engineering Service Learning Showcase',
-    date: '15 January 2026',
+  {
+    slug: "fyp1",
+    title:
+      "Completing FYP1: A Journey of System Development, Learning, and Growth",
+    date: "09 July 2026",
     excerpt:
-      'UTM students present their innovative application at MJIIT Service Learning Showcase, delivering live demos, fostering real impact, and earning the Best Team Award.',
-    image: new URL('../assets/MJIIT-Service-Learning-Showcase.jpg', import.meta.url).href
+      "Reflecting on the completion of Final Year Project 1 (FYP1), a challenging journey involving system development, technical documentation, problem-solving, and continuous learning as a Software Engineering student.",
+    image: new URL("../assets/fyp1-completion.jpg", import.meta.url).href,
   },
-      {
-    slug: 'UTMKL-International-Cultural-Day-2025',
-    title: 'International Cultural Day 2025 - UTMKL',
-    date: '11 December 2025',
+  {
+    slug: "nahidified",
+    title:
+      "Introducing Nahidified: A Journey of Learning, Leadership, and Giving Back",
+    date: "22 June 2026",
     excerpt:
-      'UTMKL Students Celebrate Global Culture, Food, and Traditions at International Cultural Day 2025, Highlighting Diversity and Connection Across Nations',
-    image: new URL('../assets/UTMKL-International-Cultural-Day-2025.jpg', import.meta.url).href
+      "Introducing Nahidified, a platform created to share experiences, insights, and practical knowledge about international education, scholarships, career development, leadership, and personal growth.",
+    image: new URL("../assets/nahidified.jpg", import.meta.url).href,
   },
-      {
-    slug: 'UTMKL-IEM-AWCS-Visit',
-    title: 'UTMKL Visit to IEM - AWCS Session',
-    date: '6 December 2025',
+  {
+    slug: "sunway-hospitality-experience-2026",
+    title: "An Unforgettable Fine Dining Experience at Sunway University",
+    date: "06 June 2026",
     excerpt:
-      'UTMKL Students Gain Firsthand Insight into Future Waste Management at IEM through Automated Waste Collection System Visit',
-    image: new URL('../assets/UTMKL-IEM-AWCS-Visit.jpg', import.meta.url).href
+      "A memorable visit to Sunway University for a fine dining experience organized by hospitality students, celebrating creativity, dedication, friendship, and the passion behind the world of hospitality and culinary arts.",
+    image: new URL("../assets/sunway-fine-dining.jpg", import.meta.url).href,
   },
-      {
-    slug: 'abdullahalnahid-issutmkl-VP',
-    title: 'Media Recognition - ISS UTMKL VP Election',
-    date: '30 November 2025',
+  {
+    slug: "langkawi-adventure-2026",
+    title:
+      "Exploring Langkawi: Three Days of Adventure and Unforgettable Memories",
+    date: "10 May 2026",
     excerpt:
-      'Journalism plays a vital role in amplifying student voices and giving visibility to international leadership.',
-    image: new URL('../assets/abdullahalnahid-issutmkl-VP.png', import.meta.url).href
+      "A memorable three-day journey across Langkawi filled with breathtaking landscapes, exciting adventures, scenic drives, and unforgettable moments while exploring one of Malaysia’s most beautiful islands.",
+    image: new URL("../assets/langkawi.jpg", import.meta.url).href,
   },
-    {
-    slug: 'miul-2025',
-    title: 'MIUL 2025: Strengthening Internationalisation in Higher Education',
-    date: '21 October 2025',
+  {
+    slug: "improving-campus-transportation-2026",
+    title: "Working Towards Better Transportation at UTM Kuala Lumpur",
+    date: "02 May 2026",
     excerpt:
-      'UTM KL hosted a transformative event shaping regional leadership and global partnerships in higher education.',
-    image: new URL('../assets/miul.jpg', import.meta.url).href
+      "Exploring practical solutions to improve transportation connectivity at UTM Kuala Lumpur through student feedback, collaboration with university stakeholders, and efforts to create a more convenient campus experience for both international and local students.",
+    image: new URL("../assets/isstransportation.jpg", import.meta.url).href,
+  },
+  {
+    slug: "dsa-2026",
+    title: "Defence Services Asia (DSA) 2026",
+    date: "23 April 2026",
+    excerpt:
+      "The Defence Services Asia (DSA) 2026 exhibition, held on 23 April 2026, marked the final day of one of Asia’s largest and most significant defence and security events. The exhibition served as a powerful platform showcasing the intersection of strategy, innovation, and global collaboration in the modern defence landscape.",
+    image: new URL("../assets/DSA-2026.png", import.meta.url).href,
+  },
+  {
+    slug: "cybersecurity-warfare-modern-conflict",
+    title:
+      "Cybersecurity and Warfare: The Invisible Battlefield of Modern Conflict",
+    date: "02 April 2026",
+    excerpt:
+      "As global conflicts evolve, cyberspace has emerged as a critical battlefield where nations engage in silent yet powerful attacks. This article explores the rise of cyber warfare, real-world case studies, and the growing importance of cybersecurity in protecting modern societies from digital threats.",
+    image: new URL("../assets/cybersecurity-and-warfare.png", import.meta.url)
+      .href,
+  },
+  {
+    slug: "ramadan-outreach-issutmkl-2026",
+    title: "Ramadan Outreach Initiative 2026 at UTMKL",
+    date: "14 March 2026",
+    excerpt:
+      "UTM International Kuala Lumpur Campus, with the support of ISS UTMKL, leads a Ramadan outreach initiative providing essential aid and community engagement activities for Palestinian families in Malaysia, reflecting the values of compassion, solidarity, and social responsibility.",
+    image: new URL(
+      "../assets/ramadan-outreach-issutmkl-2026.png",
+      import.meta.url,
+    ).href,
+  },
+  {
+    slug: "global-iftar-issutmkl-2026",
+    title: "Global Iftar 2026 at UTMKL",
+    date: "12 March 2026",
+    excerpt:
+      "ISS UTMKL, in collaboration with UTM International Kuala Lumpur Campus, hosts Global Iftar 2026, bringing together students from diverse backgrounds to celebrate unity, compassion, and the spirit of Ramadan.",
+    image: new URL("../assets/global-iftar-issutmkl-2026.png", import.meta.url)
+      .href,
+  },
+  {
+    slug: "international-mother-language-day-bdhckl-2026",
+    title:
+      "Honoring International Mother Language Day and National Martyrs’ Day",
+    date: "21 February 2026",
+    excerpt:
+      "Malaysia’s Bangladeshi community celebrates International Mother Language Day and National Martyrs’ Day with a meaningful observance at the Bangladesh High Commission in Kuala Lumpur.",
+    image: new URL(
+      "../assets/international-mother-language-day-bdhckl-2026.png",
+      import.meta.url,
+    ).href,
+  },
+  {
+    slug: "iss-utmkl-management-camp-2025-26",
+    title: "ISS UTMKL Management Camp & Yearly Activities 2025/26",
+    date: "17 January 2026",
+    excerpt:
+      "ISS UTMKL kicks off 2026 with Management Camp 2025/26 and Yearly Activities Presentation, focusing on collaboration, wellbeing, and meaningful student leadership.",
+    image: new URL(
+      "../assets/ISS-UTMKL-Management-Camp-2025-26.jpeg",
+      import.meta.url,
+    ).href,
+  },
+  {
+    slug: "mjiit-service-learning-showcase-2026",
+    title: "MJIIT Software Engineering Service Learning Showcase",
+    date: "15 January 2026",
+    excerpt:
+      "UTM students present their innovative application at MJIIT Service Learning Showcase, delivering live demos, fostering real impact, and earning the Best Team Award.",
+    image: new URL(
+      "../assets/MJIIT-Service-Learning-Showcase.jpg",
+      import.meta.url,
+    ).href,
+  },
+  {
+    slug: "UTMKL-International-Cultural-Day-2025",
+    title: "International Cultural Day 2025 - UTMKL",
+    date: "11 December 2025",
+    excerpt:
+      "UTMKL Students Celebrate Global Culture, Food, and Traditions at International Cultural Day 2025, Highlighting Diversity and Connection Across Nations",
+    image: new URL(
+      "../assets/UTMKL-International-Cultural-Day-2025.jpg",
+      import.meta.url,
+    ).href,
+  },
+  {
+    slug: "UTMKL-IEM-AWCS-Visit",
+    title: "UTMKL Visit to IEM - AWCS Session",
+    date: "6 December 2025",
+    excerpt:
+      "UTMKL Students Gain Firsthand Insight into Future Waste Management at IEM through Automated Waste Collection System Visit",
+    image: new URL("../assets/UTMKL-IEM-AWCS-Visit.jpg", import.meta.url).href,
+  },
+  {
+    slug: "abdullahalnahid-issutmkl-VP",
+    title: "Media Recognition - ISS UTMKL VP Election",
+    date: "30 November 2025",
+    excerpt:
+      "Journalism plays a vital role in amplifying student voices and giving visibility to international leadership.",
+    image: new URL("../assets/abdullahalnahid-issutmkl-VP.png", import.meta.url)
+      .href,
+  },
+  {
+    slug: "miul-2025",
+    title: "MIUL 2025: Strengthening Internationalisation in Higher Education",
+    date: "21 October 2025",
+    excerpt:
+      "UTM KL hosted a transformative event shaping regional leadership and global partnerships in higher education.",
+    image: new URL("../assets/miul.jpg", import.meta.url).href,
   },
 
   {
-    slug: 'parlimen-visit-2025',
-    title: 'A Day Inside the Parliament of Malaysia',
-    date: '14 October 2025',
+    slug: "parlimen-visit-2025",
+    title: "A Day Inside the Parliament of Malaysia",
+    date: "14 October 2025",
     excerpt:
-      'A meaningful visit with Monash Political Awareness Club debates, insights, and reflections on leadership.',
-    image: new URL('../assets/parliament.jpg', import.meta.url).href
+      "A meaningful visit with Monash Political Awareness Club debates, insights, and reflections on leadership.",
+    image: new URL("../assets/parliament.jpg", import.meta.url).href,
   },
 
   {
-    slug: 'ifuture-summit-2025',
-    title: 'iFuture Summit 2025: Empowering Young Leaders',
-    date: '13 October 2025',
+    slug: "ifuture-summit-2025",
+    title: "iFuture Summit 2025: Empowering Young Leaders",
+    date: "13 October 2025",
     excerpt:
-      'Three inspiring days of ideas, innovation, and digital leadership representing UTM Kuala Lumpur with pride.',
-    image: new URL('../assets/ifuture.jpg', import.meta.url).href
+      "Three inspiring days of ideas, innovation, and digital leadership representing UTM Kuala Lumpur with pride.",
+    image: new URL("../assets/ifuture.jpg", import.meta.url).href,
   },
 
   {
-    slug: 'bowlers-bonanza-2025',
-    title: 'Dare Devils Strike Gold at Bowlers Bonanza 2025',
-    date: '11 August 2025',
+    slug: "bowlers-bonanza-2025",
+    title: "Dare Devils Strike Gold at Bowlers Bonanza 2025",
+    date: "11 August 2025",
     excerpt:
-      'A championship built on teamwork, discipline, and unity, proving that leadership shows even on the bowling lanes.',
-    image: new URL('../assets/bowling.jpg', import.meta.url).href
+      "A championship built on teamwork, discipline, and unity, proving that leadership shows even on the bowling lanes.",
+    image: new URL("../assets/bowling.jpg", import.meta.url).href,
   },
 
-    {
-    slug: 'art-asean-2025',
-    title: 'Ambassadors Roundtable for ASEAN 2025: A New Era in Educational Diplomacy',
-    date: '03 July 2025',
+  {
+    slug: "art-asean-2025",
+    title:
+      "Ambassadors Roundtable for ASEAN 2025: A New Era in Educational Diplomacy",
+    date: "03 July 2025",
     excerpt:
-      'A powerful moment for ASEAN-EU academic cooperation, with UTM at the centre of global educational diplomacy.',
-    image: new URL('../assets/asean.jpg', import.meta.url).href
-  }
-]
+      "A powerful moment for ASEAN-EU academic cooperation, with UTM at the centre of global educational diplomacy.",
+    image: new URL("../assets/asean.jpg", import.meta.url).href,
+  },
+];
 </script>
